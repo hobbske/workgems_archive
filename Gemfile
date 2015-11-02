@@ -5,12 +5,9 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.1'
 # Use postgresql as the database for Active Record
 gem 'pg'
-<<<<<<< HEAD
 # Use rails 12factor to enable all platform features
 gem 'rails_12factor', '~> 0.0.3'
-=======
 
->>>>>>> development
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use bootstrap for syling
