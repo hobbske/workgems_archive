@@ -13,7 +13,7 @@
           <br>
         </ul>
 
-        <%= link_to "Sign up for free", new_user_registration_path, class: 'btn btn-warning btn-lg btn-block' %>
+        <%= link_to "Sign up for free", new_user_registration_path(plan: @basic_plan.id), class: 'btn btn-warning btn-lg btn-block' %>
 
       </div>
     </div>
@@ -25,7 +25,7 @@
           <li>get exclusive access to our member community!</li>
         </ul>
 
-        <%= link_to "Sign up for $9.99/month", new_user_registration_path, class: 'btn btn-danger btn-lg btn-block' %>
+        <%= link_to "Sign up for $9.99/month", new_user_registration_path(plan: @pro_plan.id), class: 'btn btn-danger btn-lg btn-block' %>
 
       </div>
   </div>
