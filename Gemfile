@@ -6,6 +6,8 @@ gem 'rails', '4.2.1'
 gem 'pg'
 # Use rails 12factor to enable all platform features
 gem 'rails_12factor', '~> 0.0.3'
+# Use Devise to handle user authorization and authentication
+gem 'devise', '~> 3.5', '>= 3.5.2'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
