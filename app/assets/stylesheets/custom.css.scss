@@ -9,11 +9,21 @@ body {
   background-image: url(/assets/wood_bg.jpg);
 }
 
-// .navbar {
-//   background-color: #CF4001;
-// }
+.text-brand {
+  color: #CF4001;
+}
+.text-white {
+  color: white;
+}
 
-// .jumbotron {
-//   background-color: #CF4001;
-//   color: white;
-// }
+.navbar {
+  background-color: #CF4001;
+}
+
+.header-brand {
+  background-color: #CF4001;
+  color: white;
+  text-align: center;
+  margin-bottom: 10px;
+  padding: 20px;
+}

@@ -1,36 +1,37 @@
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
+    <div class="header-brand">
+
+      <% if params[:plan] == '2' %>
+
+        <h1>Pro Account</h1>
+        <h3>$9.99 per month</h3>
+        <p>(store up to 1000 photos and get exclusive access to our member community)</p>
+
+      <% else %>
+
+        <h1>Basic Account</h1>
+        <h3>free account</h3>
+        <p>Store up to 200 photos</p>
+
+      <% end %>
+    </div>
+
+  </div>
+
+  <div class="col-md-6 col-md-offset-3">
     <div class="well">
 
       <h2>Sign up</h2>
 
-      <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-        <%= devise_error_messages! %>
-
-        <div class="field form-group">
-          <%= f.label :email %><br />
-          <%= f.email_field :email, autofocus: true, class: 'form-control'%>
-        </div>
-
-        <div class="field form-group">
-          <%= f.label :password %>
-          <% if @minimum_password_length %>
-          <em>(<%= @minimum_password_length %> characters minimum)</em>
-          <% end %><br />
-          <%= f.password_field :password, autocomplete: "off", class: 'form-control' %>
-        </div>
-
-        <div class="field form-group">
-          <%= f.label :password_confirmation %><br />
-          <%= f.password_field :password_confirmation, autocomplete: "off", class: 'form-control' %>
-        </div>
-
-        <div class=" form-group">
-          <%= f.submit "Sign up", class: 'btn btn-success' %>
-        </div>
+      <% if params[:plan] == '2' %>
+        <%= render "pro_form" %>
+      <% else %>
+        <%= render "basic_form" %>
       <% end %>
 
       <%= render "devise/shared/links" %>
+
     </div>
   </div>
 </div>
