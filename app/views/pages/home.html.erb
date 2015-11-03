@@ -1,4 +1,32 @@
-<div class="jumbotron text-center">
-  <h1>Welcome to <br>Work<i class="fa fa-diamond"></i>Gems</h1>
-  <h3>The easiest way to showcase the gems of your work!</h3>
+<div class="container">
+  <div class="jumbotron text-center">
+    <h1>Welcome to <br>Work<i class="fa fa-diamond"></i>Gems</h1>
+    <h3>The easiest way to showcase the gems of your work!</h3>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="well">
+        <h2 class="text-center">Basic Membership</h2>
+        <ul>
+          <li>store up to 200 photos</li>
+          <br>
+        </ul>
+
+        <%= link_to "Sign up for free", new_user_registration_path, class: 'btn btn-warning btn-lg btn-block' %>
+
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="well">
+        <h2 class="text-center">Pro Membership</h2>
+        <ul>
+          <li>store up to 1000 photos</li>
+          <li>get exclusive access to our member community!</li>
+        </ul>
+
+        <%= link_to "Sign up for $9.99/month", new_user_registration_path, class: 'btn btn-danger btn-lg btn-block' %>
+
+      </div>
+  </div>
 </div>
