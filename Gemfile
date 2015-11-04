@@ -5,6 +5,7 @@ gem 'rails', '4.2.1'
 
 # Use stripe to accept credit card payments.
 gem 'stripe', '~> 1.30', '>= 1.30.2'
+
 # Use figaro to hide secret keys
 gem 'figaro', '~> 1.1', '>= 1.1.1'
 
