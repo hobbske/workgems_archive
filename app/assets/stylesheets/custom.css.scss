@@ -5,6 +5,12 @@
  @import "font-awesome-sprockets";
  @import "font-awesome";
 
+.alert-notice {
+  color: #Ba5d3B;
+  background-color: #fcf8e3;
+  border-color: #faebcc;
+}
+
 body {
   background-image: url(/assets/wood_bg.jpg);
 }
